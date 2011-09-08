@@ -17,5 +17,5 @@
  *      ibnu yahya <ibnu.yahya@toroo.org>
  */
 
-$array_name = array("nim","kd_mk","nilai","terbilang","kd_jurusan","kirim");
+$data = "nim,kd_mk,nilai,terbilang,kd_jurusan,kirim";
 ?>

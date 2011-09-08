@@ -17,5 +17,5 @@
  *      ibnu yahya <ibnu.yahya@toroo.org>
  */
 
-$array_name = array("id","nip_dosen","jk","suami_istri","tmpt_lahir","tgl_lahir","tgl_nikah","pekerjaan","nama_anak1","tgl_lahir_anak1","tmpt_lahir_anak1","nama_anak2","tgl_lahir_anak2","tmpt_lahir_anak2","nama_anak3","tgl_lahir_anak3","tmpt_lahir_anak3","kirim");
+$data = "id,nip_dosen,jk,suami_istri,tmpt_lahir,tgl_lahir,tgl_nikah,pekerjaan,nama_anak1,tgl_lahir_anak1,tmpt_lahir_anak1,nama_anak2,tgl_lahir_anak2,tmpt_lahir_anak2,nama_anak3,tgl_lahir_anak3,tmpt_lahir_anak3,kirim";
 ?>

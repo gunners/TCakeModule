@@ -17,5 +17,5 @@
  *      ibnu yahya <ibnu.yahya@toroo.org>
  */
 
-$array_name = array("kd_fakultas","fakultas","kirim"); //dirubah
+$data = "kd_fakultas,fakultas,kirim"; //dirubah
 ?>

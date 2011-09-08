@@ -17,5 +17,5 @@
  *      ibnu yahya <ibnu.yahya@toroo.org>
  */
 
-$array_name = array("id_wali","nip","nim","kirim");
+$data = "id_wali,nip,nim,kirim";
 ?>

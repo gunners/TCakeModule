@@ -17,5 +17,5 @@
  *      ibnu yahya <ibnu.yahya@toroo.org>
  */
 
-$array_name = array("nip","tgl_mulai","tgl_akhir","nama_pelatihan","deskripsi","lokasi","keterangan","sebagai","kirim");
+$data = "nip,tgl_mulai,tgl_akhir,nama_pelatihan,deskripsi,lokasi,keterangan,sebagai,kirim";
 ?>
