@@ -38,7 +38,7 @@ echo ("<table>
 		echo ("<tr class='".$class."'>
 <td align='center'>".$tesis[nip]."</td><input type='hidden' id='nip".$tesis[id_tesis]."' value='".$tesis[nip]."'>
 <td>".$tesis[judul]."<input type='hidden' id='judul".$tesis[id_tesis]."' value='".$tesis[judul]."'></td>			 
-<td align='center'><img src='".HOSTNAME.THEMES."default/images/icon/delete.png'> <img src='".HOSTNAME.THEMES."default/images/icon/update.png'></td>
+<td align='center'><img src='".HOSTNAME.THEMES."default/images/icon/delete.png'> <input type='image' id='update".$tesis[id_tesis]."' src='".HOSTNAME.THEMES."default/images/icon/update.png'></td>
 </tr>");
 		$i++;
 	}
