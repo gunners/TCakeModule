@@ -45,7 +45,7 @@ echo ("<table>
 <td>".$dataruangan[kapasitas]."<input type='hidden' id='kapasitas".$dataruangan[kd_ruangan]."' value='".$dataruangan[kapasitas]."'> </td>
 <td>".$dataruangan[kapasitas_ujian]."<input type='hidden' id='kapasitas_ujian".$dataruangan[kd_ruangan]."' value='".$dataruangan[kapasitas_ujian]."'> </td>
 <td>".$dataruangan[keterangan]."<input type='hidden' id='keterangan".$dataruangan[kd_ruangan]."' value='".$dataruangan[keterangan]."'> </td>
-<td align='center'><input type='image' id='update".$dataruangan[kd_ruangan]."' src='".HOSTNAME.THEMES."default/images/icon/delete.png'> <img src='".HOSTNAME.THEMES."default/images/icon/update.png'></td>
+<td align='center'><input type='image' id='update".$dataruangan[kd_ruangan]."' src='".HOSTNAME.THEMES."default/images/icon/delete.png'> <iinput type='image' id='update".$dataruangan[kd_ruangan]."'  src='".HOSTNAME.THEMES."default/images/icon/update.png'></td>
 </tr>");
 		$i++;
 	}

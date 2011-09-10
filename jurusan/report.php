@@ -38,7 +38,7 @@ if ($count != 0) {
 		}
 		echo ("<tr class='".$class."'><td align='center'>".$jurusan[kd_jurusan]."<input type='hidden' id='kd_jurusan".$jurusan[kd_jurusan]."' value='".$jurusan[kd_jurusan]."'></td> 
 		<td>".$jurusan[jurusan]."<input type='hidden' id='jurusan".$jurusan[kd_jurusan]."' value='".$jurusan[jurusan]."'></td>
-<td align='center'><input type='image' id='del' src='".HOSTNAME.THEMES."default/images/icon/delete.png'>
+<td align='center'><input type='image' id='del".$jurusan[kd_jurusan]."' src='".HOSTNAME.THEMES."default/images/icon/delete.png'>
  <input type='image' id='update".$jurusan[kd_jurusan]."' src='".HOSTNAME.THEMES."default/images/icon/update.png'></td>
 </tr>");
 		$i++;
