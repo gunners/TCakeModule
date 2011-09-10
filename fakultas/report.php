@@ -40,7 +40,7 @@ if ($count != 0) {
 <input type='hidden' id='kd_fakultas".$fakultas[kd_fakultas]."' value='".$fakultas[kd_fakultas]."'>
 </td> <td><b>".$fakultas[fakultas]."
 </b><input type='hidden' id='fakultas".$fakultas[kd_fakultas]."' value='".$fakultas[fakultas]."'></td>
-<td align='center'><img src='".HOSTNAME.THEMES."default/images/icon/delete.png'> <img src='".HOSTNAME.THEMES."default/images/icon/update.png'></td>
+<td align='center'><img src='".HOSTNAME.THEMES."default/images/icon/delete.png'> <input type='image' id='update".$fakultas[kd_fakultas]."' src='".HOSTNAME.THEMES."default/images/icon/update.png'></td>
 </tr>");
 		$i++;
 	}
