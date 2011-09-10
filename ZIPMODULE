@@ -1,0 +1,9 @@
+#!/bin/bash
+# ibnu yahya <ibnu.yahya@toroo.org>
+ls >/tmp/toroomodule
+while read DIRNAME
+do
+zip ZIPFILE/$DIRNAME.zip $DIRNAME/* | dialog --progressbox 10 50
+sleep 1
+done </tmp/toroomodule
+dialog --msgbox 'Modul has been created' 10 50
