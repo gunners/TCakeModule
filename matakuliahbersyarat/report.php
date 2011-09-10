@@ -37,7 +37,7 @@ if ($count != 0) {
 			$class = "genap";
 		}
 		echo ("<tr class='".$class."'><td align='center'>".$matakuliah_bersyarat[id]."</td><input type='hidden' id='id".$matakuliah_bersyarat[id]."' value='".$matakuliah_bersyarat[id]."'> <td>".$matakuliah_bersyarat[kd_matakuliah]."<input type='hidden' id='kd_matakuliah".$matakuliah_bersyarat[id]."' value='".$matakuliah_bersyarat[kd_matakuliah]."'></td> <td>"$matakuliah_bersyarat[kd_matakuliah_bersyarat]."<input type='hidden' id='kd_matakuliah_bersyarat".$matakuliah_bersyarat[id]."' value='".$matakuliah_bersyarat[kd_matakuliah_bersyarat]."'></td>
-<td align='center'><img src='".HOSTNAME.THEMES."default/images/icon/delete.png'> <img src='".HOSTNAME.THEMES."default/images/icon/update.png'></td>
+<td align='center'><img src='".HOSTNAME.THEMES."default/images/icon/delete.png'> <input type='image' id='update".$matakuliah_bersyarat[id]."' src='".HOSTNAME.THEMES."default/images/icon/update.png'></td>
 </tr>");
 		$i++;
 	}
