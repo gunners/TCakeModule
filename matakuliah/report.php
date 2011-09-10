@@ -52,7 +52,7 @@ echo ("<table>
 <td>".$matakuliah[thn_kurikulum]."<input type='hidden' id='thn_kurikulum".$matakuliah[kd_mk]."' value='".$matakuliah[thn_kurikulum]."'> </td>
 <td>".$matakuliah[jenis_mk]."<input type='hidden' id='jenis_mk".$matakuliah[kd_mk]."' value='".$matakuliah[jenis_mk]."'> </td>
 <td>".$matakuliah[nip]."<input type='hidden' id='nip".$matakuliah[kd_mk]."' value='".$matakuliah[nip]."'> </td>
-<td align='center'><img src='".HOSTNAME.THEMES."default/images/icon/delete.png'> <img src='".HOSTNAME.THEMES."default/images/icon/update.png' id='update".$matakuliah[kd_mk]."'></td>
+<td align='center'><img src='".HOSTNAME.THEMES."default/images/icon/delete.png'> <input type='image' id='update".$matakuliah[kd_mk]."' src='".HOSTNAME.THEMES."default/images/icon/update.png' id='update".$matakuliah[kd_mk]."'></td>
 </tr>");
 		$i++;
 	}
