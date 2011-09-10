@@ -43,7 +43,7 @@ echo ("<table>
 <td>".$nilai[nilai]."<input type='hidden' id='nilai".$nilai[id_nilai]."' value='".$nilai[nilai]."'></td>
 <td>".$nilai[terbilang]."<input type='hidden' id='terbilang".$nilai[id_nilai]."' value='".$nilai[terbilang]."'></td>
 <td>".$nilai[kd_jurusan]."<input type='hidden' id='kd_jurusan".$nilai[id_nilai]."' value='".$nilai[kd_jurusan]."'></td>
-<td align='center'><img src='".HOSTNAME.THEMES."default/images/icon/delete.png'> <input type='image' id='update".$nilai[id_nilai]."' src='".HOSTNAME.THEMES."default/images/icon/update.png' id='update".$nilai[id_nilai]."'></td>
+<td align='center'><input type='image' id='del".$nilai[id_nilai]."'  src='".HOSTNAME.THEMES."default/images/icon/delete.png'> <input type='image' id='update".$nilai[id_nilai]."' src='".HOSTNAME.THEMES."default/images/icon/update.png' id='update".$nilai[id_nilai]."'></td>
 </tr>");
 		$i++;
 	}

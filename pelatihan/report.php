@@ -49,7 +49,7 @@ echo ("<table>
 <td>".$pelatihan[lokasi]."</td><input type='hidden' id='lokasi".$pelatihan[nip]."' value='".$pelatihan[lokasi]."'></td>
 <td>".$pelatihan[keterangan]."</td><input type='hidden' id='keterangan".$pelatihan[nip]."' value='".$pelatihan[keterangan]."'></td>
 <td>".$pelatihan[sebagai]."</td><input type='hidden' id='sebagai".$pelatihan[nip]."' value='".$pelatihan[sebagai]."'></td>			 
-<td align='center'><img src='".HOSTNAME.THEMES."default/images/icon/delete.png'> <input type='image' id='update".$pelatihan[nip]."' src='".HOSTNAME.THEMES."default/images/icon/update.png'></td>
+<td align='center'><input type='image' id='del".$pelatihan[nip]."'  src='".HOSTNAME.THEMES."default/images/icon/delete.png'> <input type='image' id='update".$pelatihan[nip]."' src='".HOSTNAME.THEMES."default/images/icon/update.png'></td>
 </tr>");
 		$i++;
 	}
