@@ -67,7 +67,7 @@ echo ("<table>
 <td>".$kp4[nama_anak3]."<input type='hidden' id='nama_anak3".$kp4[id]."' value='".$kp4[nama_anak3]."'></td>
 <td>".$kp4[tgl_lahir_anak3]."<input type='hidden' id='tgl_lahir_anak3".$kp4[id]."' value='".$kp4[tgl_lahir_anak3]."'></td>
 <td>".$kp4[tmpt_lahir_anak3]."<input type='hidden' id='tmpt_lahir_anak3".$kp4[id]."' value='".$kp4[tmpt_lahir_anak3]."'></td>			 
-<td align='center'><img src='".HOSTNAME.THEMES."default/images/icon/delete.png'> <input type='image' id='update".$kp4[id]."' src='".HOSTNAME.THEMES."default/images/icon/update.png'></td>
+<td align='center'><input type='image' id='del".$kp4[id]."'  src='".HOSTNAME.THEMES."default/images/icon/delete.png'> <input type='image' id='update".$kp4[id]."' src='".HOSTNAME.THEMES."default/images/icon/update.png'></td>
 </tr>");
 		$i++;
 	}
