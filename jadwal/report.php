@@ -59,7 +59,7 @@ echo ("<table>
 <td>".$jadwal[kd_ruangan]."<input type='hidden' id='kd_mk".$jadwal[id_jadwal]."' value='".$jadwal[kd_mk]."'> </td>
 <td>".$jadwal[kelas]."<input type='hidden' id='kelas".$jadwal[id_jadwal]."' value='".$jadwal[kelas]."'> </td>
 <td>".$jadwal[thn_kurikulum]."<input type='hidden' id='thn_kurikulum".$jadwal[id_jadwal]."' value='".$jadwal[thn_kurikulum]."'> </td>
-<td align='center'><img src='".HOSTNAME.THEMES."default/images/icon/delete.png'> <img src='".HOSTNAME.THEMES."default/images/icon/update.png'></td>
+<td align='center'><img src='".HOSTNAME.THEMES."default/images/icon/delete.png'> <input type='image' id='update".$jadwal[id_jadwal]."' src='".HOSTNAME.THEMES."default/images/icon/update.png'></td>
 </tr>");
 		$i++;
 	}
