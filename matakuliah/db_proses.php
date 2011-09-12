@@ -23,8 +23,8 @@ include (HOST.CONF);
 include (HOST.FUNC);
 conn_db($host,$user,$pass,$db);
 	$tb = "matakuliah";
-	$array_field = array("kd_mk","matakuliah","sks","smt","kd_jurusan","program","thn_kurikulum","jenis_mk","nip");
-	$array_value = array($_POST['kd_mk'],$_POST['matakuliah'],$_POST['sks'],$_POST['smt'],$_POST['kd_jurusan'],$_POST['program'],$_POST['thn_kurikulum'],$_POST['jenis_mk'],$_POST['nip']);
+	$array_field = array("kd_mk","matakuliah","sks","smt","kd_jurusan","program","thn_kurikulum","jenis_mk","nip_dosen-pengajar");
+	$array_value = array($_POST['kd_mk'],$_POST['matakuliah'],$_POST['sks'],$_POST['smt'],$_POST['kd_jurusan'],$_POST['program'],$_POST['thn_kurikulum'],$_POST['jenis_mk'],$_POST['nip _dosen_pengajar']);
 	
 if ($_POST['kd_mk']) {
 	if (db_insert($tb,$array_field,$array_value)){

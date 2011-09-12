@@ -23,8 +23,8 @@ include (HOST.CONF);
 include (HOST.FUNC);
 conn_db($host,$user,$pass,$db);
 $tb = "jadwal";
-	$array_field = array("kd_mk","hari","tanggal","jam_start","jam_finish","nip","nama_mata_kuliah","sks","jurusan","program","kd_ruangan","kelas","thn_kurikulum");
-	$array_value = array($_POST['kd_mk'],$_POST['hari'],$_POST['tanggal'],$_POST['jam_start'],$_POST['jam_finish'],$_POST['nip'],$_POST['nama_mata_kuliah'],$_POST['sks'],$_POST['jurusan'],$_POST['program'],$_POST['kd_ruangan'],$_POST['kelas'],$_POST['thn_kurikulum']);
+	$array_field = array("id_jadwal","kd_mk","hari","tanggal","jam_start","jam_finish","nip","nama_mata_kuliah","sks","jurusan","program","kd_ruangan","kelas","thn_kurikulum");
+	$array_value = array($_POST['id_jadwal'],$_POST['kd_mk'],$_POST['hari'],$_POST['tanggal'],$_POST['jam_start'],$_POST['jam_finish'],$_POST['nip'],$_POST['nama_mata_kuliah'],$_POST['sks'],$_POST['jurusan'],$_POST['program'],$_POST['kd_ruangan'],$_POST['kelas'],$_POST['thn_kurikulum']);
 if ($_POST['kd_mk']) {
 	
 	if (db_insert($tb,$array_field,$array_value)){

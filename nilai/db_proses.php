@@ -23,8 +23,8 @@ include (HOST.CONF);
 include (HOST.FUNC);
 conn_db($host,$user,$pass,$db);
 $tb = "nilai";
-$array_field = array("nim","kd_mk","nilai","terbilang","kd_jurusan");
-$array_value = array($_POST['nim'],$_POST['kd_mk'],$_POST['nilai'],$_POST['terbilang'],$_POST['kd_jurusan']);
+$array_field = array("id_nilai","nim","kd_mk","nilai","terbilang","nama_mahasiswa","sks","nip_dosen_wali","nama_dosen_wali","jurusan");
+$array_value = array($_POST['nim'],$_POST['kd_mk'],$_POST['nilai'],$_POST['terbilang'],$_POST['nama_mahasiswa'],$_POST['sks'],$_POST['nip_dosen_wali'],$_POST['nama_dosen_wali'],$_POST['jurusan']);
 if ($_POST['nim']) {
 	if (db_insert($tb,$array_field,$array_value)){
 		echo "Data berhasil di input";

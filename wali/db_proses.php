@@ -23,8 +23,8 @@ include (HOST.CONF);
 include (HOST.FUNC);
 conn_db($host,$user,$pass,$db);
 $tb = "wali";
-	$array_field = array("nip","nim");
-	$array_value = array($_POST['nip'],$_POST['nim']);
+	$array_field = array("id_wali","nip","nim");
+	$array_value = array($_POST['id_wali'],$_POST['nip'],$_POST['nim']);
 
 if ($_POST['nip']) {
 	
