@@ -31,18 +31,14 @@ if ($_POST['kd_mk']) {
 		echo "Data berhasil di input";
 	}
 	else {
-		echo (mysql_error());
+		db_update($tb,$array_field,$array_value,"kd_mk",$_POST[kd_mk]);
+		echo "Data berhasil di update!";
 	}
 }
 else if ($path[2] == "delete") {
 	$id_field = "id_mk";
 	$id_value = "";
 	db_delete($tb,$id_field,$id_value);
-}
-else if ($path[2] == "update") {
-	$id_field = "id_jadwal";
-	$id_value = "";
-	db_update($tb,$array_field,$array_value,$id_field,$id_value);
 }
 else {
 	echo ("<center><h1>HALAMAN TIDAK DIKETAHUI</h1></center>");

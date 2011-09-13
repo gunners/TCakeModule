@@ -28,11 +28,12 @@ $array_value = array($_POST['id'],$_POST['nip_dosen'],$_POST['jk'],$_POST['suami
 if ($_POST['id']) {
 	
 	
-	if (db_insert($tb,$array_field,$array_value)){
+if (db_insert($tb,$array_field,$array_value)){
 		echo "Data berhasil di input";
 	}
 	else {
-		echo "Data gagal di input";
+		db_update($tb,$array_field,$array_value,"id",$_POST[id]);
+		echo "Data berhasil di update!";
 	}
 }
 else if ($path[2] == "delete") {
@@ -40,12 +41,6 @@ else if ($path[2] == "delete") {
 	$id_field = "id";
 	$id_value = "";
 	db_delete($tb,$id_field,$id_value);
-}
-else if ($path[2] == "update") {
-	
-	$id_field = "id";
-	$id_value = "";
-	db_update($tb,$array_field,$array_value,$id_field,$id_value);
 }
 else {
 	echo ("<center><h1>HALAMAN TIDAK DIKETAHUI</h1></center>");

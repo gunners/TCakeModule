@@ -31,7 +31,8 @@ if ($_POST['nim']) && ($_GET[get] == "input")) {
 		echo "Data berhasil di input";
 	}
 	else {
-		echo "Data gagal di input";
+		db_update($tb,$array_field,$array_value,"nim",$_POST[nim]);
+		echo "Data berhasil di update!";
 	}
 }
 else if (($_GET[get] == "aksi") && ($_POST['aksi'] == "delete")) {
@@ -45,20 +46,7 @@ else if (($_GET[get] == "aksi") && ($_POST['aksi'] == "delete")) {
 		echo "Data gagal di update";
 	}
 }
-else if (($_GET[get] == "aksi") && ($_POST['aksi'] == "update")) {
-	$tb = "mahasiswa";
-	$array_field = array("nim","nama","alamat","kota","kd_jurusan","kd_fakultas");
-	$array_value = array("");
-	$id_field = "nim";
-	$id_value = "";
-	db_update($tb,$array_field,$array_value,$id_field,$id_value);{
-		echo "Data berhasil di update";
-	}
 	else {
-		echo "Data gagal di update";
-	}
-}
-else {
 	echo ("<center><h1>HALAMAN TIDAK DIKETAHUI</h1></center>");
 }
 
