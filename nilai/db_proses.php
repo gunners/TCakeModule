@@ -30,18 +30,14 @@ if ($_POST['nim']) {
 		echo "Data berhasil di input";
 	}
 	else {
-		echo "Data gagal di input";
+		db_update($tb,$array_field,$array_value,"id_nilai",$_POST[id_nilai]);
+		echo "Data berhasil di update!";
 	}
 }
 else if ($path[2] == "delete") {
 	$id_field = "id_nilai";
 	$id_value = "";
 	db_delete($tb,$id_field,$id_value);
-}
-else if ($path[2] == "update") {
-	$id_field = "id_nilai";
-	$id_value = "";
-	db_update($tb,$array_field,$array_value,$id_field,$id_value);
 }
 else {
 	echo ("<center><h1>HALAMAN TIDAK DIKETAHUI</h1></center>");
