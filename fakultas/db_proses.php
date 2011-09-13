@@ -31,7 +31,8 @@ if ($_POST['kd_fakultas']) {
 		echo "Data berhasil di input";
 	}
 	else {
-		echo "Data gagal di input";
+		db_update($tb,$array_field,$array_value,"kd_fakultas",$_POST[kd_fakultas]);
+		echo "Data berhasil di update!";
 	}
 }
 else if ($path[2] == "delete") {
