@@ -35,6 +35,12 @@ if ($_POST['kd_fakultas']) {
 		echo "Data berhasil di update!";
 	}
 }
+else if ($path[2] == "delete") {
+	
+	$id_field = "kd_fakultas";
+	$id_value = "";
+	db_delete($tb,$id_field,$id_value);
+}
 else {
 	echo ("HALAMAN TIDAK DIKETAHUI");
 }

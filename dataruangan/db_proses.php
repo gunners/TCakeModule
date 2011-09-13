@@ -41,14 +41,6 @@ else if ($path[2] == "delete") {
 	$id_value = "";
 	db_delete($tb,$id_field,$id_value);
 }
-else if ($path[2] == "update") {
-	$tb = "dataruangan";
-	$array_field = array("kd_ruangan","nama_ruangan","lantai","kapasitas","kapasitas_ujian","keterangan");
-	$array_value = array("");
-	$id_field = "kd_ruangan";
-	$id_value = "";
-	db_update($tb,$array_field,$array_value,$id_field,$id_value);
-}
 else {
 	echo ("<center><h1>HALAMAN TIDAK DIKETAHUI</h1></center>");
 }
