@@ -31,7 +31,8 @@ if ($_POST['nip']) {
 		echo "Data berhasil di input";
 	}
 	else {
-		echo "Data gagal di input";
+		db_update($tb,$array_field,$array_value,"nip",$_POST[nip]);
+		echo "Data berhasil di update!";
 	}
 }
 else if ($_POST['tomboldosen'] == "delete") {
@@ -39,15 +40,6 @@ else if ($_POST['tomboldosen'] == "delete") {
 	$id_field = "nip";
 	$id_value = "";
 	db_delete($tb,$id_field,$id_value);
-}
-else if ($_POST['tombolfdosen'] == "update") {
-	$tb = "dosen";
-	$array_field = array("nip","nama","alamat","kota","kd_jurusan","kd_fakultas","email","web","phone_hp","gelar_s1","gelar_s2","gelar_s3","gelar_gb","gelar_profesi","gluluol","pangkat","tmt_cpns","tmt_pns","tgl_keluar","karpeg","kelurahan","kecamatan","propinsi","kd_pos","tempat_lahir","tgl_lahir","nama_pasangan","pekerjaan_pasangan","agama","jabatan_organisasi","jabatan_akademik","pendidikan","lulusan_PT_univ","bidang_ilmu");
-
-	$array_value = array("");
-	$id_field = "nip";
-	$id_value = "";
-	db_update($tb,$array_field,$array_value,$id_field,$id_value);
 }
 else {
 	echo ("<center><h1>HALAMAN TIDAK DIKETAHUI</h1></center>");
