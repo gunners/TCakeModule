@@ -65,7 +65,7 @@
 				var kd_ruangan = $('#kd_ruangan".$jadwal[kd_mk]."').val();
 				var kelas = $('#kelas".$jadwal[kd_mk]."').val();
 				var thn_kurikulum = $('#thn_kurikulum".$jadwal[kd_mk]."').val();
-				$('input#update').val('yes');
+				$('input#update').val('');
 				$('input#jadwal').val('');
 				$('input#kd_mk').val('');
 				$('input#hari').val('');
@@ -81,6 +81,7 @@
 				$('input#kelas').val('');
 				$('input#thn_kurikulum').val('');
 
+				$('input#update').val('yes');
 				$('input#jadwal').val(jadwal);
 				$('input#kd_mk').val(kd_mk);
 				$('input#hari').val(hari);

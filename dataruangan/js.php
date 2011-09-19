@@ -45,7 +45,7 @@
 				var kapasitas_ujian = $('#kapasitas_ujian".$dataruangan[kd_ruangan]."').val();
 				var keterangan = $('#keterangan".$dataruangan[kd_ruangan]."').val();
 				
-				$('input#update').val('yes');
+				$('input#update').val('');
 				$('input#kd_ruangan').val('');
 				$('input#nama_ruangan').val('');
 				$('input#lantai').val('');
@@ -53,7 +53,7 @@
 				$('input#kapasitas_ujian').val('');
 				$('input#keterangan').val('');
 				
-				
+				$('input#update').val('yes');
 				$('input#kd_ruangan').val(kd_ruangan);
 				$('input#nama_ruangan').val(nama_ruangan);
 				$('input#lantai').val(lantai);

@@ -42,10 +42,11 @@
 				var nim = $('#nim".$tesis[nim]."').val();
 				var judul = $('#judul".$tesis[nim]."').val();
 
-				$('input#update').val('yes');
+				$('input#update').val('');
 				$('input#nim').val('');
 				$('input#judul').val('');
 				
+				$('input#update').val('yes');
 				$('input#nim').val(nim);
 				$('input#judul').val(judul);
 

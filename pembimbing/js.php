@@ -42,10 +42,11 @@
 				var nip= $('#nip".$pembimbing[nip]."').val();
 				var id_tesis = $('#id_tesis".$pembimbing[nip]."').val();
 
-				$('input#update').val('yes');
+				$('input#update').val('');
 				$('input#nip').val('');
 				$('input#id_tesis').val('');
 				
+				$('input#update').val('yes');
 				$('input#nip').val(nip);
 				$('input#id_tesis').val(id_tesis);
 

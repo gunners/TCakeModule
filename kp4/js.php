@@ -72,7 +72,7 @@
 				var tgl_lahir_anak3 = $('#tgl_lahir_anak3".$kp4[id]."').val();
 				var tmpt_lahir_anak3 = $('#tmpt_lahir_anak3".$kp4[id]."').val();
 				
-				$('input#update').val('yes');
+				$('input#update').val('');
 				$('input#id').val('');
 				$('input#nip_dosen').val('');
 				$('input#jk').val('');
@@ -91,6 +91,7 @@
 				$('input#tgl_lahir_anak3').val('');
 				$('input#tmpt_lahir_anak3').val('');
 				
+				$('input#update').val('yes');
 				$('input#id').val(id);
 				$('input#nip_dosen').val(nip_dosen);
 				$('input#jk').val(jk);

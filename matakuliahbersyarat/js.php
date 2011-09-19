@@ -44,11 +44,12 @@
 				var kd_matakuliah = $('#kd_matakuliah".$matakuliah_bersyarat[kd_matakuliah_bersyarat]."').val();
 				var kd_matakuliah_bersyarat = $('#kd_matakuliah_bersyarat".$matakuliah_bersyarat[kd_matakuliah_bersyarat]."').val();
 				
-				$('input#update').val('yes');
+				$('input#update').val('');
 				$('input#id').val('');
 				$('input#kd_matakuliah').val('');
 				$('input#kd_matakuliah_bersyarat').val('');
 				
+				$('input#update').val('yes');
 				$('input#id').val(id);
 				$('input#kd_matakuliah').val(kd_matakuliah);
 				$('input#kd_matakuliah_bersyarat').val(kd_matakuliah_bersyarat);

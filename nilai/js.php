@@ -48,13 +48,14 @@
 				var terbilang = $('input#terbilang".$nilai[id_nilai]."').val();
 				var kd_jurusan = $('input#kd_jurusan".$nilai[id_nilai]."').val();
 				
-				$('input#update').val('yes');
+				$('input#update').val('');
 				$('input#nim').val('');
 				$('input#kd_mk').val('');
 				$('input#nilai').val('');
 				$('input#terbilang').val('');
 				$('input#kd_jurusan').val('');
 				
+				$('input#update').val('yes');
 				$('input#nim').val(nim);
 				$('input#kd_mk').val(kd_mk);
 				$('input#nilai').val(nilai);

@@ -54,7 +54,7 @@
 				var keterangan = $('#keterangan".$pelatihan[nip]."').val();
 				var sebagai = $('#sebagai".$pelatihan[nip]."').val();
 
-				$('input#update').val('yes');
+				$('input#update').val('');
 				$('input#nip').val('');
 				$('input#tgl_mulai').val('');
 				$('input#tgl_akhir').val('');
@@ -64,6 +64,7 @@
 				$('input#keterangan').val('');
 				$('input#sebagai').val('');
 				
+				$('input#update').val('yes');
 				$('input#nip').val(nip);
 				$('input#tgl_mulai').val(tgl_mulai);
 				$('input#tgl_akhir').val(tgl_akhir);
