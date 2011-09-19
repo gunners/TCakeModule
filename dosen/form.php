@@ -63,7 +63,7 @@ $array_name = array("nip","nama","alamat","kota","kd_jurusan","kd_fakultas","ema
 $array_value = array("","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","submit");
 $array_class = "effect";
 $array_id = $array_name;
-$input_tag = array($tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_opt,$tag_opt);
+$input_tag = array($tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_opt);
 echo ("<form  id='dosen' action='".HOSTNAME."plugin/dosen/db_proses.php' method='POST'><center><table border='0'>");
 form_input($array_label,$array_type,$array_name,$array_value,$array_class,$array_id,$input_tag);
 echo ("</table></center></form>");
