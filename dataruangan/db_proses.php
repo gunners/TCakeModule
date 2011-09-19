@@ -23,19 +23,15 @@ include (HOST.CONF);
 include (HOST.FUNC);
 conn_db($host,$user,$pass,$db);
 
-if ($_POST['kd_ruangan']) {
-	$tb = "dataruangan";
-	$array_field = array("kd_ruangan","nama_ruangan","lantai","kapasitas","kapasitas_ujian","keterangan");
-	$array_value = array($_POST['kd_ruangan'],$_POST['nama_ruangan'],$_POST['lantai'],$_POST['kapasitas'],$_POST['kapasitas_ujian'],$_POST['keterangan']);
-	if (db_insert($tb,$array_field,$array_value)){
-		echo "Data berhasil di input";
-	}
-	else {
-		db_update($tb,$array_field,$array_value,"kd_ruangan",$_POST[kd_ruangan]);
-		echo "Data berhasil di update!";
-	}
+if ($_POST[update] == "yes") {
+	db_update($tb,$array_field,$array_value,"kd_ruangan",$_POST[kd_ruangan]);
+	echo "Data berhasil di update!";
 }
-else if ($path[2] == "delete") {
+else if (!$_POST[update]) {	
+	db_insert($tb,$array_field,$array_value);
+	echo "Data berhasil di insert!";
+}
+/*else if ($path[2] == "delete") {
 	$tb = "dataruangan";
 	$id_field = "kd_ruangan";
 	$id_value = "";
@@ -43,6 +39,6 @@ else if ($path[2] == "delete") {
 }
 else {
 	echo ("<center><h1>HALAMAN TIDAK DIKETAHUI</h1></center>");
-}
+}*/
 
 ?>

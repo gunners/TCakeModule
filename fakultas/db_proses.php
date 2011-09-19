@@ -25,17 +25,15 @@ conn_db($host,$user,$pass,$db);
 $tb = "fakultas";
 	$array_field = array("kd_fakultas","fakultas");
 	$array_value = array($_POST[kd_fakultas],$_POST[fakultas]);
-if ($_POST['kd_fakultas']) {
-	
-	if (db_insert($tb,$array_field,$array_value)){
-		echo "Data berhasil di input";
-	}
-	else {
-		db_update($tb,$array_field,$array_value,"kd_fakultas",$_POST[kd_fakultas]);
-		echo "Data berhasil di update!";
-	}
+if ($_POST[update] == "yes") {
+	db_update($tb,$array_field,$array_value,"kd_fakultas",$_POST[kd_fakultas]);
+	echo "Data berhasil di update!";
 }
-else if ($path[2] == "delete") {
+else if (!$_POST[update]) {	
+	db_insert($tb,$array_field,$array_value);
+	echo "Data berhasil di insert!";
+}
+/*else if ($path[2] == "delete") {
 	
 	$id_field = "kd_fakultas";
 	$id_value = "";
@@ -43,6 +41,6 @@ else if ($path[2] == "delete") {
 }
 else {
 	echo ("HALAMAN TIDAK DIKETAHUI");
-}
+}*/
 
 ?>

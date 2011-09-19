@@ -26,22 +26,21 @@ conn_db($host,$user,$pass,$db);
 	$array_field = array("kd_mk","matakuliah","sks","smt","kd_jurusan","program","thn_kurikulum","jenis_mk","nip_dosen-pengajar");
 	$array_value = array($_POST['kd_mk'],$_POST['matakuliah'],$_POST['sks'],$_POST['smt'],$_POST['kd_jurusan'],$_POST['program'],$_POST['thn_kurikulum'],$_POST['jenis_mk'],$_POST['nip _dosen_pengajar']);
 	
-if ($_POST['kd_mk']) {
-	if (db_insert($tb,$array_field,$array_value)){
-		echo "Data berhasil di input";
-	}
-	else {
-		db_update($tb,$array_field,$array_value,"kd_mk",$_POST[kd_mk]);
-		echo "Data berhasil di update!";
-	}
+if ($_POST[update] == "yes") {
+	db_update($tb,$array_field,$array_value,"kd_mk",$_POST[kd_mk]);
+	echo "Data berhasil di update!";
 }
-else if ($path[2] == "delete") {
+else if (!$_POST[update]) {	
+	db_insert($tb,$array_field,$array_value);
+	echo "Data berhasil di insert!";
+}
+/*else if ($path[2] == "delete") {
 	$id_field = "id_mk";
 	$id_value = "";
 	db_delete($tb,$id_field,$id_value);
 }
 else {
 	echo ("<center><h1>HALAMAN TIDAK DIKETAHUI</h1></center>");
-}
+}*/
 
 ?>

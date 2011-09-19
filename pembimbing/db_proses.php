@@ -27,17 +27,15 @@ $tb = "pembimbing";
 	$array_value = array(['id_pembimbing'],$_POST$_POST['nip'],$_POST['id_tesis']);
 
 
-if ($_POST['nip']) {
-	
-	if (db_insert($tb,$array_field,$array_value)){
-		echo "Data berhasil di input";
-	}
-	else {
-		db_update($tb,$array_field,$array_value,"id_pembimbing",$_POST[id_pembimbing]);
-		echo "Data berhasil di update!";
-	}
+if ($_POST[update] == "yes") {
+	db_update($tb,$array_field,$array_value,"id_pembimbing",$_POST[id_pembimbing]);
+	echo "Data berhasil di update!";
 }
-else if ($path[2] == "delete") {
+else if (!$_POST[update]) {	
+	db_insert($tb,$array_field,$array_value);
+	echo "Data berhasil di insert!";
+}
+/*else if ($path[2] == "delete") {
 	
 	$id_field = "id_pembimbing";
 	$id_value = "";
@@ -45,6 +43,6 @@ else if ($path[2] == "delete") {
 }
 else {
 	echo ("<center><h1>HALAMAN TIDAK DIKETAHUI</h1></center>");
-}
+}*/
 
 ?>

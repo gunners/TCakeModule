@@ -26,17 +26,15 @@ $tb = "wali";
 	$array_field = array("id_wali","nip","nim");
 	$array_value = array($_POST['id_wali'],$_POST['nip'],$_POST['nim']);
 
-if ($_POST['nip']) {
-	
-	if (db_insert($tb,$array_field,$array_value)){
-		echo "Data berhasil di input";
-	}
-	else {
-		db_update($tb,$array_field,$array_value,"id_wali",$_POST[id_wali]);
-		echo "Data berhasil di update!";
-	}
+if ($_POST[update] == "yes") {
+	db_update($tb,$array_field,$array_value,"id_wali",$_POST[id_wali]);
+	echo "Data berhasil di update!";
 }
-else if ($path[2] == "delete") {
+else if (!$_POST[update]) {	
+	db_insert($tb,$array_field,$array_value);
+	echo "Data berhasil di insert!";
+}
+/*else if ($path[2] == "delete") {
 	
 	$id_field = "id_wali";
 	$id_value = "";
@@ -44,6 +42,6 @@ else if ($path[2] == "delete") {
 }
 else {
 	echo ("<center><h1>HALAMAN TIDAK DIKETAHUI</h1></center>");
-}
+}*/
 
 ?>

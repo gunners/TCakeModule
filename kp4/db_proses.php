@@ -25,18 +25,15 @@ conn_db($host,$user,$pass,$db);
 $tb = "kp4";
 $array_field = array("id","nip","jk","suami_istri","tmpt_lahir","tgl_lahir","tgl_nikah","pekerjaan","nama_anak1","tgl_lahir_anak1","tmpt_lahir_anak1","nama_anak2","tgl_lahir_anak2","tmpt_lahir_anak2","nama_anak3","tgl_lahir_anak3","tmpt_lahir_anak3");
 $array_value = array($_POST['id'],$_POST['nip_dosen'],$_POST['jk'],$_POST['suami_istri'],$_POST['tmpt_lahir'],$_POST['tgl_lahir'],$_POST['tgl_nikah'],$_POST['pekerjaan'],$_POST['nama_anak1'],$_POST['tgl_lahir_anak1'],$_POST['tmpt_lahir_anak1'],$_POST['nama_anak2'],$_POST['tgl_lahir_anak2'],$_POST['tmpt_lahir_anak2'],$_POST['nama_anak3'],$_POST['tgl_lahir_anak3'],$_POST['tmpt_lahir_anak3']);
-if ($_POST['id']) {
-	
-	
-if (db_insert($tb,$array_field,$array_value)){
-		echo "Data berhasil di input";
-	}
-	else {
-		db_update($tb,$array_field,$array_value,"id",$_POST[id]);
-		echo "Data berhasil di update!";
-	}
+if ($_POST[update] == "yes") {
+	db_update($tb,$array_field,$array_value,"id",$_POST[id]);
+	echo "Data berhasil di update!";
 }
-else if ($path[2] == "delete") {
+else if (!$_POST[update]) {	
+	db_insert($tb,$array_field,$array_value);
+	echo "Data berhasil di insert!";
+}
+/*else if ($path[2] == "delete") {
 
 	$id_field = "id";
 	$id_value = "";
@@ -44,6 +41,6 @@ else if ($path[2] == "delete") {
 }
 else {
 	echo ("<center><h1>HALAMAN TIDAK DIKETAHUI</h1></center>");
-}
+}*/
 
 ?>
