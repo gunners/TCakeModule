@@ -42,6 +42,7 @@
 				var nip = $('#nip".$wali[nip]."').val();
 				var nim = $('#nim".$wali[nip]."').val();
 
+				$('input#update').val('yes');
 				$('input#nip').val('');
 				$('input#nim').val('');
 				

@@ -41,7 +41,7 @@
 			$('#update".$fakultas[kd_fakultas]."').click(function(){
 				var kd_fakultas = $('#kd_fakultas".$fakultas[kd_fakultas]."').val();
 				var fakultas = $('#fakultas".$fakultas[kd_fakultas]."').val();
-
+				$('input#update').val('yes');
 				$('input#fakultas').val('');
 				$('input#kd_fakultas').val('');
 				

@@ -43,7 +43,8 @@
 				var id = $('#id".$matakuliah_bersyarat[kd_matakuliah_bersyarat]."').val();
 				var kd_matakuliah = $('#kd_matakuliah".$matakuliah_bersyarat[kd_matakuliah_bersyarat]."').val();
 				var kd_matakuliah_bersyarat = $('#kd_matakuliah_bersyarat".$matakuliah_bersyarat[kd_matakuliah_bersyarat]."').val();
-
+				
+				$('input#update').val('yes');
 				$('input#id').val('');
 				$('input#kd_matakuliah').val('');
 				$('input#kd_matakuliah_bersyarat').val('');

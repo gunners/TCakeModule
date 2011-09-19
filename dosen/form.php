@@ -54,14 +54,13 @@ $array_label = array("NIP : ",
 "Pendidikan : ",
 "Lulusan PT Univ : ",
 "Bidang Ilmu : ",
-"",
 "");
 
 $tag_app = "<tr><td><fieldset>:</fieldset></td></tr>";
 $tag_opt = "<tr><td><div id='button'>:</div></td></tr>";
-$array_type = array("text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","hidden","submit");
-$array_name = array("nip","nama","alamat","kota","kd_jurusan","kd_fakultas","email","web","phone_hp","gelar_s1","gelar_s2","gelar_s3","gelar_gb","gelar_profesi","gol","pangkat","tmt_cpns","tmt_pns","tgl_keluar","karpeg","kelurahan","kecamatan","propinsi","kd_pos","tempat_lahir","tgl_lahir","nama_pasangan","pekerjaan_pasangan","agama","jabatan_organisasi","jabatan_akademik","pendidikan","lulusan_PT_univ","bidang_ilmu","update","kirim");
-$array_value = array("","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","submit");
+$array_type = array("text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","submit");
+$array_name = array("nip","nama","alamat","kota","kd_jurusan","kd_fakultas","email","web","phone_hp","gelar_s1","gelar_s2","gelar_s3","gelar_gb","gelar_profesi","gol","pangkat","tmt_cpns","tmt_pns","tgl_keluar","karpeg","kelurahan","kecamatan","propinsi","kd_pos","tempat_lahir","tgl_lahir","nama_pasangan","pekerjaan_pasangan","agama","jabatan_organisasi","jabatan_akademik","pendidikan","lulusan_PT_univ","bidang_ilmu","kirim");
+$array_value = array("","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","submit");
 $array_class = "effect";
 $array_id = $array_name;
 $input_tag = array($tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_opt,$tag_opt);

@@ -55,7 +55,7 @@
 				var jenis_mk = $('#jenis_mk".$matakuliah[kd_mk]."').val();
 				var nip = $('#nip".$matakuliah[kd_mk]."').val();
 				
-
+				$('input#update').val('yes');
 				$('input#kd_mk').val('');
 				$('input#matakuliah').val('');
 				$('input#sks').val('');

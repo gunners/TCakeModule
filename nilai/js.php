@@ -48,6 +48,7 @@
 				var terbilang = $('input#terbilang".$nilai[id_nilai]."').val();
 				var kd_jurusan = $('input#kd_jurusan".$nilai[id_nilai]."').val();
 				
+				$('input#update').val('yes');
 				$('input#nim').val('');
 				$('input#kd_mk').val('');
 				$('input#nilai').val('');

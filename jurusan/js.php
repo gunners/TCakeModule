@@ -42,7 +42,7 @@
 			$('#update".$jurusan[kd_jurusan]."').click(function(){
 				var kd_jurusan = $('#kd_jurusan".$jurusan[kd_jurusan]."').val();
 				var jurusan = $('#jurusan".$jurusan[kd_jurusan]."').val();
-
+				$('input#update').val('yes');
 				$('input#jurusan').val('');
 				$('input#kd_jurusan').val('');
 				
