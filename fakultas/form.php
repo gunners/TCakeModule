@@ -18,13 +18,16 @@
  * 		created by ibnu yahya <ibnu.yahya@toroo.org>
  * 
  */
+	
+	$tag_app = "<tr><td><fieldset>:</fieldset></td></tr>";
+	$tag_opt = "<tr><td><div id='button'>:</div></td></tr>";
 	$array_label = array("Kode Fakultas : ","Fakultas : ","");//rubah
-	$array_type = array("text","text","submit"); //ditambah
-	$array_name = array("kd_fakultas","fakultas","kirim"); //dirubah
-	$array_value = array("","","Submit");
+	$array_type = array("text","text","hidden","submit"); //ditambah
+	$array_name = array("kd_fakultas","fakultas","update","kirim"); //dirubah
+	$array_value = array("","","","Submit");
 	$array_class = "effect";
-	$array_id = array("kd_fakultas","fakultas","kirim");
-	$input_tag = array("<tr><td><fieldset>:</fieldset></td></tr>","<tr><td><fieldset>:</fieldset></td></tr>","<tr><td><div id='button'>:</div></td></tr>");
+	$array_id = $array_name;
+	$input_tag = array($tag_app,$tag_app,$tag_opt,$tag_opt);
 	echo ("<form  id='fakultas' action='".HOSTNAME."plugin/fakultas/db_proses.php' method='POST'><center><table border='0'>");
 	form_input($array_label,$array_type,$array_name,$array_value,$array_class,$array_id,$input_tag);
 	echo ("</table></center></form>");
