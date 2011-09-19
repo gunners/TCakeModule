@@ -18,13 +18,16 @@
  * 		created by ibnu yahya <ibnu.yahya@toroo.org>
  * 
  */
-$array_label = array("Kode Ruangan : ","Nama Ruangan : ","Lantai : ","Kapasitas :  ","Kapasitas Ujian : ","Keterangan : ","");
-$array_type = array("text","text","text","text","text","text","submit");
-$array_name = array("kd_ruangan","nama_ruangan","lantai","kapasitas","kapasitas_ujian","keterangan","kirim");
-$array_value = ("","","","","","","submit");
+
+$tag_app = "<tr><td><fieldset>:</fieldset></td></tr>";
+$tag_opt = "<tr><td><div id='button'>:</div></td></tr>";
+$array_label = array("Kode Ruangan : ","Nama Ruangan : ","Lantai : ","Kapasitas :  ","Kapasitas Ujian : ","Keterangan : ","","");
+$array_type = array("text","text","text","text","text","text","hidden","submit");
+$array_name = array("kd_ruangan","nama_ruangan","lantai","kapasitas","kapasitas_ujian","keterangan","update","kirim");
+$array_value = ("","","","","","",,"","submit");
 $array_class = "effect";
-$array_id = array("kd_ruangan","nama_ruangan","lantai","kapasitas","kapasitas_ujian","keterangan","kirim");
-$input_tag = ("<tr><td><fieldset>:</fieldset></td></tr>","<tr><td><fieldset>:</fieldset></td></tr>","<tr><td><fieldset>:</fieldset></td></tr>","<tr><td><fieldset>:</fieldset></td></tr>","<tr><td><fieldset>:</fieldset></td></tr>","<tr><td><fieldset>:</fieldset></td></tr>","<tr><td><div id='button'>:</div></td></tr>");
+$array_id = $array_name;
+$input_tag = array($tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_opt,$tag_opt);
 echo ("<form  id='dataruangan' action='".HOSTNAME."plugin/dataruangan/db_proses.php' method='POST'><center><table border='0'>");//
 form_input($array_label,$array_type,$array_name,$array_value,$array_class,$array_id,$input_tag);
 echo ("</table></center></form>");//

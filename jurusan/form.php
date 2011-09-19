@@ -19,16 +19,18 @@
  * 
  */
 
-$array_label = array("Kode Jurusan : ","Jurusan : ","");
-$array_type = array("text","text","submit");
-$array_name = array("kd_jurusan","jurusan","kirim");
-$array_value = array("","","Submit");
+$tag_app = "<tr><td><fieldset>:</fieldset></td></tr>";
+$tag_opt = "<tr><td><div id='button'>:</div></td></tr>";
+$array_label = array("Kode Jurusan : ","Jurusan : ","","");
+$array_type = array("text","text","hidden","submit");
+$array_name = array("kd_jurusan","jurusan","update","kirim");
+$array_value = array("","","","Submit");
 $array_class = "effect";
-$array_id = array("kd_jurusan","jurusan","submit");
-$input_tag = array("<tr><td><fieldset>:</fieldset></td></tr>","<tr><td><fieldset>:</fieldset></td></tr>","<tr><td><div id='button'>:</div></td></tr>");
-echo ("<form  id='jurusan' action='".HOSTNAME."plugin/jurusan/db_proses.php' method='POST'><center><table border='0'>");//
+$array_id = $array_name;
+$input_tag = array($tag_app,$tag_app,$tag_opt,$tag_opt);
+echo ("<form  id='jurusan' action='".HOSTNAME."plugin/jurusan/db_proses.php' method='POST'><center><table border='0'>");
 form_input($array_label,$array_type,$array_name,$array_value,$array_class,$array_id,$input_tag);
-echo ("</table></center></form>");//
+echo ("</table></center></form>");
 
 ?>
 
