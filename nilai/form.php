@@ -18,14 +18,15 @@
  * 		created by ibnu yahya <ibnu.yahya@toroo.org>
  * 
  */
-
-$array_label = array("NIM : ","Kode Mata kuliah : ","Nilai : ","Grade Nilai : ","Kode Jurusan : ","");
-$array_type = array("text","text","text","text","text","submit");
-$array_name = array("nim","kd_mk","nilai","terbilang","kd_jurusan","kirim");
-$array_value = array("","","","","","submit");
+$tag_app = "<tr><td><fieldset>:</fieldset></td></tr>";
+$tag_opt = "<tr><td><div id='button'>:</div></td></tr>";
+$array_label = array("NIM : ","Kode Mata kuliah : ","Nilai : ","Grade Nilai : ","Kode Jurusan : ","","");
+$array_type = array("text","text","text","text","text","hidden","submit");
+$array_name = array("nim","kd_mk","nilai","terbilang","kd_jurusan","update","kirim");
+$array_value = array("","","","","","","submit");
 $array_class = "effect";
-$array_id = array("nim","kd_mk","nilai","terbilang","kd_jurusan","kirim");
-$input_tag = array("<tr><td><fieldset>:</fieldset></td></tr>","<tr><td><fieldset>:</fieldset></td></tr>","<tr><td><fieldset>:</fieldset></td></tr>","<tr><td><fieldset>:</fieldset></td></tr>","<tr><td><fieldset>:</fieldset></td></tr>","<tr><td><div id='button'>:</div></td></tr>");
+$array_id = $array_name;
+$input_tag = array($tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_opt,$tag_opt);
 echo ("<form  id='nilai' action='".HOSTNAME."plugin/nilai/db_proses.php' method='POST'><center><table border='0'>");//
 form_input($array_label,$array_type,$array_name,$array_value,$array_class,$array_id,$input_tag);
 echo ("</table></center></form>");//
