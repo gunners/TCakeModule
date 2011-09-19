@@ -18,13 +18,15 @@
  * 		created by ibnu yahya <ibnu.yahya@toroo.org>
  * 
  */
-$array_label = array("NIP : ","Tanggal Mulai : ","Tanggal Akhir : ","Nama Pelatihan : ","deskripsi : ","Lokasi :","Keterangan : ","Sebagai :  ","");
-$array_type = array("text","text","text","text","text","text","text","text","kirim");
-$array_name = array("nip","tgl_mulai","tgl_akhir","nama_pelatihan","deskripsi","lokasi","keterangan","sebagai","kirim");
-$array_value = ("","","","","","","","","submit");
+$tag_app = "<tr><td><fieldset>:</fieldset></td></tr>";
+$tag_opt = "<tr><td><div id='button'>:</div></td></tr>";
+$array_label = array("NIP : ","Tanggal Mulai : ","Tanggal Akhir : ","Nama Pelatihan : ","deskripsi : ","Lokasi :","Keterangan : ","Sebagai :  ","","");
+$array_type = array("text","text","text","text","text","text","text","text","hidden","submit");
+$array_name = array("nip","tgl_mulai","tgl_akhir","nama_pelatihan","deskripsi","lokasi","keterangan","sebagai","update","kirim");
+$array_value = ("","","","","","","","","","submit");
 $array_class = "effect";
-$array_id = array("nip","tgl_mulai","tgl_akhir","nama_pelatihan","deskripsi","lokasi","keterangan","sebagai","kirim");
-$input_tag = ("<tr><td><fieldset>:</fieldset></td></tr>","<tr><td><fieldset>:</fieldset></td></tr>","<tr><td><fieldset>:</fieldset></td></tr>","<tr><td><fieldset>:</fieldset></td></tr>","<tr><td><fieldset>:</fieldset></td></tr>","<tr><td><fieldset>:</fieldset></td></tr>","<tr><td><fieldset>:</fieldset></td></tr>","<tr><td><fieldset>:</fieldset></td></tr>","<tr><td><div id='button'>:</div></td></tr>");
+$array_id = $array_name;
+$input_tag = ($tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_opt,$tag_opt);
 echo ("<form  id='pelatihan' action='".HOSTNAME."plugin/pelatihan/db_proses.php' method='POST'><center><table border='0'>");//
 form_input($array_label,$array_type,$array_name,$array_value,$array_class,$array_id,$input_tag);
 echo ("</table></center></form>");//
