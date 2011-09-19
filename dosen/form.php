@@ -54,6 +54,7 @@ $array_label = array("NIP : ",
 "Pendidikan : ",
 "Lulusan PT Univ : ",
 "Bidang Ilmu : ",
+"",
 "");
 
 $tag_app = "<tr><td><fieldset>:</fieldset></td></tr>";

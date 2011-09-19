@@ -18,26 +18,15 @@
  * 		created by ibnu yahya <ibnu.yahya@toroo.org>
  * 
  */
-
-$array_label = array("Kode Mata Kuliah : ","Hari : ","Tanggal : ","Jam Start : ","Jam Finish : ","NIP : ","SKS : ","Jurusan ; ","Program : ","Kode Ruangan : ","Kelas : ","Tahun Kurikulum : ","");
-$array_type = array("text","text","text","text","text","text","text","text","text","text","text","text","submit");
-$array_name = array("kd_mk","hari","tanggal","jam_start","jam_finish","nip","sks","jurusan","program","kd_ruangan","kelas","thn_kurikulum","kirim");
+$tag_app = "<tr><td><fieldset>:</fieldset></td></tr>";
+$tag_opt = "<tr><td><div id='button'>:</div></td></tr>";
+$array_label = array("Kode Mata Kuliah : ","Hari : ","Tanggal : ","Jam Start : ","Jam Finish : ","NIP : ","SKS : ","Jurusan ; ","Program : ","Kode Ruangan : ","Kelas : ","Tahun Kurikulum : ","","");
+$array_type = array("text","text","text","text","text","text","text","text","text","text","text","text","hidden","submit");
+$array_name = array("kd_mk","hari","tanggal","jam_start","jam_finish","nip","sks","jurusan","program","kd_ruangan","kelas","thn_kurikulum","update","kirim");
 $array_value = array("","","","","","","","","","","","","submit");
 $array_class = "effect";
-$array_id = array("kd_mk","hari","tanggal","jam_start","jam_finish","nip","sks","jurusan","program","kd_ruangan","kelas","thn_kurikulum","kirim");
-$input_tag = array("<tr><td><fieldset>:</fieldset></td></tr>",
-"<tr><td><fieldset>:</fieldset></td></tr>",
-"<tr><td><fieldset>:</fieldset></td></tr>",
-"<tr><td><fieldset>:</fieldset></td></tr>",
-"<tr><td><fieldset>:</fieldset></td></tr>",
-"<tr><td><fieldset>:</fieldset></td></tr>",
-"<tr><td><fieldset>:</fieldset></td></tr>",
-"<tr><td><fieldset>:</fieldset></td></tr>",
-"<tr><td><fieldset>:</fieldset></td></tr>",
-"<tr><td><fieldset>:</fieldset></td></tr>",
-"<tr><td><fieldset>:</fieldset></td></tr>",
-"<tr><td><fieldset>:</fieldset></td></tr>",
-"<tr><td><div id='button'>:</div></td></tr>");
+$array_id = $array_name;
+$input_tag = array($tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_app,$tag_opt,$tag_opt);
 echo ("<form  id='jadwal' action='".HOSTNAME."plugin/jadwal/db_proses.php' method='POST'><center><table border='0'>");//
 form_input($array_label,$array_type,$array_name,$array_value,$array_class,$array_id,$input_tag);
 echo ("</table></center></form>");//

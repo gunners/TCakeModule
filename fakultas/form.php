@@ -21,7 +21,7 @@
 	
 	$tag_app = "<tr><td><fieldset>:</fieldset></td></tr>";
 	$tag_opt = "<tr><td><div id='button'>:</div></td></tr>";
-	$array_label = array("Kode Fakultas : ","Fakultas : ","");//rubah
+	$array_label = array("Kode Fakultas : ","Fakultas : ","","");//rubah
 	$array_type = array("text","text","hidden","submit"); //ditambah
 	$array_name = array("kd_fakultas","fakultas","update","kirim"); //dirubah
 	$array_value = array("","","","Submit");
